@@ -32,7 +32,7 @@ public class googleLogInSteps {
     }
     @Then("I should be directed to the login page")
     public void i_should_be_directed_to_the_login_page() {
-        googleLogin.emailBox.isDisplayed();
+        Assert.assertTrue(googleLogin.emailBox.isDisplayed());
     }
 
 
